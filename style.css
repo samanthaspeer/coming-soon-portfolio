@@ -1,0 +1,161 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2908
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 :root \{\
+\'a0\'a0--bg-color: #f8f6f2;\
+\'a0\'a0--text-main: #181818;\
+\'a0\'a0--text-muted: #555555;\
+\'a0\'a0--accent: #1e3f20;\
+\'a0\'a0--accent-hover: #142b16;\
+\'a0\'a0--card-bg: #ffffff;\
+\}\
+\
+* \{\
+\'a0\'a0box-sizing: border-box;\
+\'a0\'a0margin: 0;\
+\'a0\'a0padding: 0;\
+\}\
+\
+body \{\
+\'a0\'a0font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;\
+\'a0\'a0background-color: var(--bg-color);\
+\'a0\'a0color: var(--text-main);\
+\'a0\'a0min-height: 100vh;\
+\'a0\'a0display: flex;\
+\'a0\'a0align-items: center;\
+\'a0\'a0justify-content: center;\
+\'a0\'a0padding: 2rem;\
+\}\
+\
+.container \{\
+\'a0\'a0max-width: 1100px;\
+\'a0\'a0width: 100%;\
+\'a0\'a0background: var(--card-bg);\
+\'a0\'a0border-radius: 16px;\
+\'a0\'a0overflow: hidden;\
+\'a0\'a0display: grid;\
+\'a0\'a0grid-template-columns: 1fr 1fr;\
+\'a0\'a0box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);\
+\}\
+\
+.content \{\
+\'a0\'a0padding: 4rem 3.5rem;\
+\'a0\'a0display: flex;\
+\'a0\'a0flex-direction: column;\
+\'a0\'a0justify-content: center;\
+\}\
+\
+.badge \{\
+\'a0\'a0display: inline-block;\
+\'a0\'a0width: fit-content;\
+\'a0\'a0background-color: #e8efe9;\
+\'a0\'a0color: var(--accent);\
+\'a0\'a0font-size: 0.75rem;\
+\'a0\'a0font-weight: 700;\
+\'a0\'a0letter-spacing: 0.08em;\
+\'a0\'a0text-transform: uppercase;\
+\'a0\'a0padding: 0.4rem 0.85rem;\
+\'a0\'a0border-radius: 999px;\
+\'a0\'a0margin-bottom: 1.5rem;\
+\}\
+\
+h1 \{\
+\'a0\'a0font-size: 2.5rem;\
+\'a0\'a0line-height: 1.15;\
+\'a0\'a0margin-bottom: 1rem;\
+\'a0\'a0letter-spacing: -0.02em;\
+\}\
+\
+p \{\
+\'a0\'a0color: var(--text-muted);\
+\'a0\'a0line-height: 1.6;\
+\'a0\'a0margin-bottom: 2rem;\
+\}\
+\
+.countdown \{\
+\'a0\'a0display: flex;\
+\'a0\'a0gap: 1rem;\
+\'a0\'a0margin-bottom: 2rem;\
+\}\
+\
+.time-box \{\
+\'a0\'a0background: var(--bg-color);\
+\'a0\'a0padding: 0.85rem 1rem;\
+\'a0\'a0border-radius: 10px;\
+\'a0\'a0text-align: center;\
+\'a0\'a0min-width: 72px;\
+\}\
+\
+.time-box span \{\
+\'a0\'a0display: block;\
+\'a0\'a0font-size: 1.5rem;\
+\'a0\'a0font-weight: 700;\
+\'a0\'a0color: var(--accent);\
+\}\
+\
+.time-box small \{\
+\'a0\'a0font-size: 0.7rem;\
+\'a0\'a0text-transform: uppercase;\
+\'a0\'a0color: var(--text-muted);\
+\'a0\'a0letter-spacing: 0.05em;\
+\}\
+\
+.notify-form \{\
+\'a0\'a0display: flex;\
+\'a0\'a0gap: 0.5rem;\
+\}\
+\
+.notify-form input \{\
+\'a0\'a0flex: 1;\
+\'a0\'a0padding: 0.85rem 1rem;\
+\'a0\'a0border: 1px solid #dcdcdc;\
+\'a0\'a0border-radius: 8px;\
+\'a0\'a0font-size: 0.95rem;\
+\}\
+\
+.notify-form button \{\
+\'a0\'a0padding: 0.85rem 1.5rem;\
+\'a0\'a0background-color: var(--accent);\
+\'a0\'a0color: #ffffff;\
+\'a0\'a0border: none;\
+\'a0\'a0border-radius: 8px;\
+\'a0\'a0font-weight: 600;\
+\'a0\'a0cursor: pointer;\
+\'a0\'a0transition: background 0.2s ease;\
+\}\
+\
+.notify-form button:hover \{\
+\'a0\'a0background-color: var(--accent-hover);\
+\}\
+\
+.status-msg \{\
+\'a0\'a0margin-top: 0.75rem;\
+\'a0\'a0margin-bottom: 0;\
+\'a0\'a0font-size: 0.85rem;\
+\'a0\'a0color: var(--accent);\
+\'a0\'a0font-weight: 500;\
+\}\
+\
+.visual img \{\
+\'a0\'a0width: 100%;\
+\'a0\'a0height: 100%;\
+\'a0\'a0object-fit: cover;\
+\'a0\'a0display: block;\
+\}\
+\
+@media (max-width: 850px) \{\
+\'a0\'a0.container \{\
+\'a0\'a0\'a0\'a0grid-template-columns: 1fr;\
+\'a0\'a0\}\
+\'a0\'a0.content \{\
+\'a0\'a0\'a0\'a0padding: 2.5rem 2rem;\
+\'a0\'a0\}\
+\'a0\'a0.visual \{\
+\'a0\'a0\'a0\'a0order: -1;\
+\'a0\'a0\'a0\'a0max-height: 300px;\
+\'a0\'a0\}\
+\}}

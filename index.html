@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2775.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.SF NS'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.SF NS'; min-height: 16.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Coming Soon | Web Development Portfolio&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="badge"&gt;Portfolio Launching Soon&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;Crafting Intentional Digital Experiences&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>I’m currently curating a collection of web design and front-end development projects.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>Check back soon to explore responsive interfaces, interactive prototypes, and case studies.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="countdown" id="countdown"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="time-box"&gt;&lt;span id="days"&gt;00&lt;/span&gt;&lt;small&gt;Days&lt;/small&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="time-box"&gt;&lt;span id="hours"&gt;00&lt;/span&gt;&lt;small&gt;Hours&lt;/small&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="time-box"&gt;&lt;span id="minutes"&gt;00&lt;/span&gt;&lt;small&gt;Minutes&lt;/small&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="time-box"&gt;&lt;span id="seconds"&gt;00&lt;/span&gt;&lt;small&gt;Seconds&lt;/small&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;form class="notify-form" onsubmit="event.preventDefault(); document.getElementById('status').textContent = 'Thank you! You will be notified at launch.';"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="email" placeholder="Enter your email for launch updates" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button type="submit"&gt;Notify Me&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p id="status" class="status-msg"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="visual"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="hero.jpg" alt="Creative web development workspace"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Set launch date 14 days from today</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const launchDate = new Date();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>launchDate.setDate(launchDate.getDate() + 14);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function updateCountdown() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const now = new Date().getTime();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const distance = launchDate - now;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const days = Math.floor(distance / (1000 * 60 * 60 * 24));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const seconds = Math.floor((distance % (1000 * 60)) / 1000);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById("days").textContent = String(days).padStart(2, "0");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById("hours").textContent = String(hours).padStart(2, "0");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>setInterval(updateCountdown, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>updateCountdown();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
